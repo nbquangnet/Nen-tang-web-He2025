@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Bài tập 04 - Form đầy đủ</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    fieldset {
+      border: 1px solid #ccc;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+    legend {
+      font-weight: bold;
+      padding: 0 10px;
+    }
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="date"],
+    input[type="tel"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 6px;
+      box-sizing: border-box;
+    }
+    .inline {
+      display: inline-block;
+      margin-right: 15px;
+    }
+    .buttons {
+      text-align: right;
+    }
+    .buttons input {
+      padding: 8px 16px;
+      margin-left: 10px;
+    }
+    .readonly {
+      background-color: #f5f5f5;
+    }
+  </style>
+</head>
+<body>
+  <h2>Bài tập 04: Biểu mẫu thông tin nhân viên</h2>
+  <form>
+    <!-- Basic Info -->
+    <fieldset>
+      <legend>Basic Info</legend>
+      <label>Employee ID</label>
+      <input type="text" value="9" class="readonly" readonly>
+
+      <label>Last Name</label>
+      <input type="text" value="Dodsworth" class="readonly" readonly>
+
+      <label>First Name</label>
+      <input type="text" value="Anne">
+
+      <label>Gender</label>
+      <div class="inline"><input type="radio" name="gender"> Male</div>
+      <div class="inline"><input type="radio" name="gender"> Female</div>
+      <div class="inline"><input type="radio" name="gender"> XXX</div>
+      <div class="inline"><input type="radio" name="gender" checked> ZZZ</div>
+
+      <label>Title</label>
+      <input type="text" value="Sales Representative">
+
+      <label>Suffix</label>
+      <input type="text" value="Ms.">
+
+      <label>BirthDate</label>
+      <input type="text" value="1969-07-02 00:00:00">
+
+      <label>HireDate</label>
+      <input type="text" value="1994-11-15 00:00:00">
+
+      <label>SSN # (if applicable)</label>
+      <input type="text">
+
+      <label>Reports To</label>
+      <select>
+        <option selected>Buchanan</option>
+      </select>
+    </fieldset>
+
+    <!-- Contact Info -->
+    <fieldset>
+      <legend>Contact Info</legend>
+      <label>Email</label>
+      <input type="email" placeholder="name@example.com">
+
+      <label>Address</label>
+      <input type="text" value="7 Houndstooth Rd.">
+
+      <label>City</label>
+      <input type="text" value="London">
+
+      <label>Region</label>
+      <input type="text">
+
+      <label>Postal Code</label>
+      <input type="text" value="WG2 7LT">
+
+      <label>Country</label>
+      <select>
+        <option>Vietnam</option>
+        <option>USA</option>
+        <option selected>Russian Federation</option>
+        <option>Japan</option>
+      </select>
+
+      <label>US Home Phone</label>
+      <input type="tel" value="(234)234-2342">
+
+      <label>Photo</label>
+      <input type="text" value="EmpID9.bmp">
+    </fieldset>
+
+    <!-- Optional Info -->
+    <fieldset>
+      <legend>Optional Info</legend>
+
+      <label>Notes</label>
+      <textarea rows="5">Anne has a BA degree in English from St. Lawrence College. She is fluent in French and German. ZZZ</textarea>
+
+      <label>Preferred Shift</label>
+      <div class="inline"><input type="checkbox"> Regular</div>
+      <div class="inline"><input type="checkbox" checked> Gravy Yard</div>
+
+      <label>Active?</label>
+      <input type="checkbox" checked>
+
+      <label>Are you human?</label>
+      <input type="text" value="TIDAWO">
+      <div><button type="button">Click to change</button></div>
+    </fieldset>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <input type="submit" value="Submit">
+      <input type="reset" value="Cancel">
+    </div>
+  </form>
+</body>
+</html>
