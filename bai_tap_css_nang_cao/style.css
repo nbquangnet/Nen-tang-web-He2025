@@ -73,6 +73,10 @@ th {
   background-color: grey;
   padding: 10px;
 }
+tbody tr:hover {
+  background-color: yellow
+  cursor: pointer;
+}
 
 td {
   padding: 8px;
