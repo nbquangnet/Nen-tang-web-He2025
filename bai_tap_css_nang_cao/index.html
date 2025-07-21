@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý Sinh viên</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Quản lý Sinh viên</h1>
+
+  <div class="main">
+    <div class="form-container">
+      <h2>Thêm sinh viên</h2>
+      <form>
+        <div class="form-row">
+          <label for="masv">Mã SV:</label>
+          <input type="text" id="masv">
+          <label for="hoten">Họ tên:</label>
+          <input type="text" id="hoten">
+        </div>
+        <div class="form-row">
+          <label for="ngaysinh">Ngày sinh:</label>
+          <input type="date" id="ngaysinh">
+          <label for="lop">Lớp:</label>
+          <input type="text" id="lop">
+        </div>
+        <button type="submit">Thêm</button>
+      </form>
+    </div>
+
+    <div class="table-container">
+      <h2>Danh sách sinh viên</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Mã SV</th>
+            <th>Họ tên</th>
+            <th>Ngày sinh</th>
+            <th>Lớp</th>
+            <th>Sửa</th>
+            <th>Xóa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2251272750</td>
+            <td>Nguyễn Bảo Quang</td>
+            <td>11/01/2004</td>
+            <td>64ANM2</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+          </tr>
+          <tr>
+            <td>2151261020</td>
+            <td>Nguyễn Thị A</td>
+            <td>22/03/2003</td>
+            <td>63TTNT</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+          </tr>
+          <tr>
+            <td>2051062000</td>
+            <td>Trần Văn B</td>
+            <td>20/10/2002</td>
+            <td>62CNTT3</td>
+            <td><button>Sửa</button></td>
+            <td><button>Xóa</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
