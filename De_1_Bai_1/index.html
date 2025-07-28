@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="logo">TLU</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#">Employees</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <div class="header-bar">
+    <h2>Manage <span>Employees</span></h2>
+    <div class="action-buttons">
+      <button class="btn delete"> Delete</button>
+      <button class="btn add" onclick="showForm()">+ Add New Employee</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Thomas Hardy</td>
+          <td>thomashardy@mail.com</td>
+          <td>89 Chiaroscuro Rd, Portland, USA</td>
+          <td>(171) 555-2222</td>
+          <td>
+            <button class="icon edit">✏️</button>
+            <button class="icon delete">🗑️</button>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="checkbox"></td>
+          <td>Dominique Perrier</td>
+          <td>dominiqueperrier@mail.com</td>
+          <td>Obere Str. 57, Berlin, Germany</td>
+          <td>(313) 555-5735</td>
+          <td>
+            <button class="icon edit">✏️</button>
+            <button class="icon delete">🗑️</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <div class="pagination-bar">
+      <div class="entries">Showing 5 out of 25 entries</div>
+      <div class="pages">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a class="active" href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="formPopup">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Add Employee</h3>
+        <span class="close" onclick="closeForm()">×</span>
+      </div>
+      <div class="modal-body">
+        <label>Name</label>
+        <input type="text" placeholder="Name">
+        <label>Email</label>
+        <input type="email" placeholder="Email">
+        <label>Address</label>
+        <textarea placeholder="Address"></textarea>
+        <label>Phone</label>
+        <input type="text" placeholder="Phone">
+      </div>
+      <div class="modal-footer">
+        <button onclick="closeForm()">Cancel</button>
+        <button class="btn add">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showForm() {
+      document.getElementById("formPopup").classList.remove("hidden");
+    }
+
+    function closeForm() {
+      document.getElementById("formPopup").classList.add("hidden");
+    }
+  </script>
+</body>
+</html>
