@@ -1,0 +1,170 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa;
+}
+
+.topbar {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 1px solid #ccc;
+}
+.logo {
+  font-weight: bold;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.nav-links a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #333;
+}
+.search-box {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+.search-box input {
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+.search-box button {
+  padding: 5px 10px;
+  margin-left: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.header-bar {
+  background-color: #324960;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-bar h2 span {
+  font-weight: bold;
+}
+.action-buttons .btn {
+  padding: 8px 15px;
+  border: none;
+  margin-left: 10px;
+  color: white;
+  cursor: pointer;
+}
+.btn.add {
+  background-color: #28a745;
+}
+.btn.delete {
+  background-color: #dc3545;
+}
+
+.table-container {
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+th, td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+th {
+  background-color: #f1f1f1;
+}
+.icon {
+  border: none;
+  background: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.pagination-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+.pages a {
+  margin: 0 3px;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #333;
+}
+.pages .active {
+  background-color: #007bff;
+  color: white;
+}
+
+.modal {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-box {
+  background: white;
+  width: 400px;
+  border-radius: 5px;
+  overflow: hidden;
+  animation: fadeIn 0.3s ease;
+}
+.modal-header {
+  background: #f1f1f1;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.modal-body label {
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+.modal-body input,
+.modal-body textarea {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+.modal-footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: flex-end;
+  background: #f1f1f1;
+}
+.modal-footer button {
+  margin-left: 10px;
+  padding: 7px 12px;
+  border: none;
+  cursor: pointer;
+}
+.hidden {
+  display: none;
+}
+.close {
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to   { opacity: 1; transform: scale(1); }
+}
