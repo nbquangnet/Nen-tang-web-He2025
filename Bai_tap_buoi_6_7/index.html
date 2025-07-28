@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Quản lý sinh viên</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Quản lý Sinh Viên</h2>
+  </nav>
+
+  <div class="container">
+    <div class="content">
+      <div class="box form-section">
+        <h3>Thêm / Cập nhật sinh viên</h3>
+        <form id="studentForm">
+          <label for="maSV">Mã SV:</label>
+          <input type="text" id="maSV" required />
+
+          <label for="hoTen">Họ và tên:</label>
+          <input type="text" id="hoTen" required />
+
+          <label for="lop">Lớp:</label>
+          <input type="text" id="lop" required />
+
+          <div class="btn-group">
+            <button type="submit" id="btnThem" class="btn-them">Thêm</button>
+            <button type="submit" id="btnCapNhat" class="btn-capnhat" style="display:none;">Cập nhật</button>
+          </div>
+        </form>
+        <div id="thongBao"></div>
+      </div>
+
+      <div class="box table-section">
+        <h3>Danh sách sinh viên</h3>
+        <table id="bangSinhVien">
+          <thead>
+            <tr>
+              <th>Mã SV</th>
+              <th>Họ tên</th>
+              <th>Lớp</th>
+              <th>Thao tác</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
