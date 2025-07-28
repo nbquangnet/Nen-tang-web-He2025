@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: dodgerblue;
+  color: white;
+  padding: 15px 20px;
+  font-size: 15px;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.form-section { flex: 1; min-width: 280px; }
+.table-section { flex: 2; min-width: 400px; }
+
+.box h3 { margin-top: 0; color: black; }
+
+form { margin-bottom: 20px; }
+label { display: block; margin-top: 10px; font-weight: bold; }
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  box-sizing: border-box;
+  border: 1px solid gainsboro;
+  border-radius: 4px;
+}
+
+.btn-group { margin-top: 15px; display: flex; gap: 10px; }
+
+button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: white;
+}
+
+.btn-them { background-color: green; }
+.btn-them:hover { background-color: lime; }
+
+.btn-capnhat { background-color: orange; color: black; }
+.btn-capnhat:hover { background-color: lightsalmon; }
+
+.btn-sua { background-color: blue; color: white; }
+.btn-sua:hover { background-color: ; }
+
+.btn-xoa { background-color: lightcoral; color: white; }
+.btn-xoa:hover { background-color: red; }
+
+#thongBao { margin-top: 10px; font-weight: bold; }
+
+table { width: 100%; border-collapse: collapse; }
+th, td { text-align: left; padding: 8px; border: 1px solid lightgray; }
+th { background-color: dodgerblue; color: white; }
