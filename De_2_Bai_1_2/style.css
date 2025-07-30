@@ -1,0 +1,46 @@
+body {
+  background-color: #f8f9fa;
+}
+
+th span {
+  font-size: 10px;
+  color: gray;
+  margin-left: 4px;
+}
+
+footer p {
+  margin: 0;
+}
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.modal-dialog {
+  max-width: 450px;
+  margin: auto;
+}
+
+.table .btn-sm {
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.table .btn-sm:hover {
+  opacity: 0.85;
+}
+
+.pagination .page-link {
+  color: black;
+}
+
+.pagination .active .page-link {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+.navbar .form-control-sm {
+  height: 30px;
+  font-size: 14px;
+}
