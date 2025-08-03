@@ -31,7 +31,8 @@ const employees = [
     id: 5,
     name: "Nguyen Bao Quang",
     email: "quangnguyenbao@mail.com",
-    address: "Thanh Xuan, Hano, Vietnam",
+    address: "175 Tay Son Street, Hanoi, Vietnam",
     phone: "0909090909"
   }
 ];
+
