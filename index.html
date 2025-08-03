@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>64ANM2 Nguyễn Bảo Quang 2251272750</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <span class="navbar-brand fw-bold fs-5">Trường Đại học Thủy lợi</span>
+    <div class="d-flex align-items-center">
+      <a href="#" class="text-white me-3 text-decoration-none">Trang chủ</a>
+      <a href="#" class="text-white me-3 text-decoration-none">Quản lý cửa hàng</a>
+      <input type="text" class="form-control form-control-sm me-2" placeholder="Nhập nội dung tìm kiếm" style="width:200px;">
+      <button class="btn-search">TÌM KIẾM</button>
+    </div>
+  </nav>
+
+  <!-- Container -->
+  <div class="container mt-4">
+    <div class="d-flex justify-content-between mb-2">
+      <div>
+        <button class="btn btn-primary btn-sm me-1" data-bs-toggle="modal" data-bs-target="#addModal">➕ THÊM</button>
+        <button class="btn btn-secondary btn-sm">⬇️ XUẤT RA FILE</button>
+      </div>
+      <div class="d-flex align-items-center">
+        <label class="me-2">kết quả</label>
+        <select class="form-select form-select-sm" style="width:60px;">
+          <option>5</option>
+          <option>10</option>
+          <option>20</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Table -->
+    <table class="table table-bordered table-hover text-center align-middle">
+      <thead class="table-dark">
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Hành động</th>
+          <th>ID</th>
+          <th>Khách hàng <span>⬍</span></th>
+          <th>Nhân viên <span>⬍</span></th>
+          <th>Số tiền <span>⬍</span></th>
+          <th>Ngày mua <span>⬍</span></th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- JS render -->
+      </tbody>
+    </table>
+
+    <button class="btn btn-danger btn-sm mb-3">❌ DELETE SELECTED RECORDS</button>
+
+    <!-- Pagination -->
+    <nav>
+      <ul class="pagination pagination-sm justify-content-start">
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">4</a></li>
+        <li class="page-item"><a class="page-link" href="#">5</a></li>
+        <li class="page-item"><a class="page-link" href="#">></a></li>
+        <li class="page-item"><a class="page-link" href="#">>></a></li>
+      </ul>
+    </nav>
+    <p class="text-end">Kết quả 1 trong 20 trang</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white py-4 mt-4">
+    <div class="container">
+      <p class="mb-1 fw-bold">TRƯỜNG ĐẠI HỌC THỦY LỢI</p>
+      <p class="mb-0">Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội</p>
+      <p class="mb-0">Điện thoại: (024) 38522201 - Fax: (024) 35633351</p>
+      <p class="mb-0">Email: phongqlkh@tlu.edu.vn</p>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div class="modal fade" id="addModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <form class="modal-content" id="formAdd">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Thêm giao dịch</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label>Khách hàng</label>
+            <input type="text" class="form-control" id="inputKH" required>
+          </div>
+          <div class="mb-3">
+            <label>Nhân viên</label>
+            <input type="text" class="form-control" id="inputNV" required>
+          </div>
+          <div class="mb-3">
+            <label>Số tiền</label>
+            <input type="number" class="form-control" id="inputST" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
+          <button type="submit" class="btn btn-success">Thêm</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
