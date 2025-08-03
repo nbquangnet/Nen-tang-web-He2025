@@ -23,7 +23,6 @@ th span {
   background-color: rgba(40,167,69,0.1);
 }
 
-/* 🔹 Modal */
 .modal-content {
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -33,7 +32,6 @@ th span {
   margin: auto;
 }
 
-/* 🔹 Table Button */
 .table .btn-sm {
   padding: 2px 6px;
   font-size: 13px;
@@ -42,7 +40,6 @@ th span {
   opacity: 0.85;
 }
 
-/* 🔹 Pagination */
 .pagination {
   list-style: none;
   padding-left: 0;
@@ -59,8 +56,8 @@ th span {
   color: white;
 }
 
-/* 🔹 Input Navbar */
 .navbar .form-control-sm {
   height: 30px;
   font-size: 14px;
 }
+
