@@ -1,0 +1,107 @@
+body {
+  background-color: #f8f9fa;
+}
+
+th span {
+  font-size: 10px;
+  color: white;
+  margin-left: 4px;
+}
+
+.btn-search {
+  background-color: transparent;
+  height: 30px;
+  line-height: 28px;
+  color: #28a745;
+  border: 1.5px solid #28a745;
+  border-radius: 6px;
+  padding: 0 12px;
+  font-weight: 500;
+  cursor: pointer;
+} 
+
+.custom-table th,
+.custom-table td {
+  border: none;
+  border-bottom: 1px solid #dee2e6;
+}
+
+.custom-table thead th {
+  border-bottom: 2px solid #343a40; 
+}
+
+
+.btn-them {
+  background-color: #91d5ff; 
+  color: #000;
+  border: none;
+}
+
+.btn-xuat {
+  background-color: #e0e0e0; 
+  color: #000;
+  border: none;
+}
+
+.btn-them:hover,
+.btn-xuat:hover {
+  opacity: 0.85;
+}
+
+footer p {
+  margin: 0;
+}
+
+.custom-footer {
+  background-color: darkblue;
+}
+
+
+.modal-content {
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.modal-dialog {
+  max-width: 450px;
+  margin: auto;
+}
+
+.table .btn-sm {
+  padding: 2px 6px;
+  font-size: 13px;
+}
+
+.table .btn-sm:hover {
+  opacity: 0.85;
+}
+
+.pagination .page-link {
+  color: black;
+}
+
+.pagination .active .page-link {
+  background-color: blue;
+  border-color:blue;
+}
+
+.navbar .form-control-sm {
+  height: 30px;
+  font-size: 14px;
+}
+
+.custom-container {
+  max-width: 1200px;
+  margin: 40px auto 0 auto;
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+.controls-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
