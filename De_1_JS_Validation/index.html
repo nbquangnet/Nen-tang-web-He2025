@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="logo">TLU</div>
+    <div class="nav-links">
+      <a href="#">Home</a>
+      <a href="#"><b>Employees</b></a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search">
+      <button>Search</button>
+    </div>
+  </div>
+
+  <div class="header-bar">
+    <h2>Manage <span><strong>Employees</strong></span></h2>
+    <div class="action-buttons">
+      <button class="btn delete">🛑 Delete</button>
+      <button class="btn add" onclick="showForm()">➕ Add New Employee</button>
+    </div>
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Address</th>
+          <th>Phone</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table">
+      </tbody>
+    </table>
+
+    <div class="pagination-bar">
+      <div class="entries" id="entries-info">Showing 5 out of 5 entries</div>
+      <div class="pages">
+        <a href="#">Previous</a>
+        <a class="active" href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal hidden" id="formPopup">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h3>Add Employee</h3>
+        <span class="close" onclick="closeForm()">×</span>
+      </div>
+      <div class="modal-body">
+        <label>Name</label>
+        <input id="name" type="text" placeholder="Name">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Email">
+        <label>Address</label>
+        <textarea id="address" placeholder="Address"></textarea>
+        <label>Phone</label>
+        <input id="phone" type="text" placeholder="Phone">
+        <p id="error-msg" style="color:red; font-size:14px;"></p>
+      </div>
+      <div class="modal-footer">
+        <button onclick="closeForm()">Cancel</button>
+        <button class="btn add" onclick="addEmployee()">Add</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function showForm() { document.getElementById("formPopup").classList.remove("hidden"); }
+    function closeForm() { document.getElementById("formPopup").classList.add("hidden"); }
+  </script>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
