@@ -10,15 +10,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const st = document.getElementById("inputST").value.trim();
 
     if (!kh || !nv || !st) {
-      alert("⚠️ Vui lòng điền đầy đủ thông tin!");
+      alert("Vui lòng điền đầy đủ thông tin!");
       return;
     }
     if (kh.length > 30) {
-      alert("⚠️ Tên khách hàng không được vượt quá 30 ký tự!");
+      alert("Tên khách hàng không được vượt quá 30 ký tự!");
       return;
     }
     if (nv.length > 30) {
-      alert("⚠️ Tên nhân viên không được vượt quá 30 ký tự!");
+      alert("Tên nhân viên không được vượt quá 30 ký tự!");
       return;
     }
 
@@ -33,7 +33,8 @@ document.addEventListener("DOMContentLoaded", () => {
     giaoDich.push(newGD);
     renderTable();
 
-    alert("✅ Thêm giao dịch thành công!");
+    alert("Thêm giao dịch thành công!");
     form.reset();
   });
 });
+
