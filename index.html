@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Quản lý giao dịch</title>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-dark bg-dark px-4">
+    <span class="navbar-brand fw-bold fs-5">Trường Đại học Thủy lợi</span>
+    <div class="d-flex align-items-center">
+      <a href="#" class="text-white me-3 text-decoration-none">Trang chủ</a>
+      <a href="#" class="text-white me-3 text-decoration-none">Quản lý cửa hàng</a>
+      <input type="text" class="form-control form-control-sm me-2" placeholder="Nhập nội dung tìm kiếm" style="width:200px;">
+      <button class="btn-search">TÌM KIẾM</button>
+    </div>
+  </nav>
+
+  <div class="container custom-container">
+
+    <div class="controls-row mb-3">
+      <div>
+        <button class="btn btn-sm btn-them" data-bs-toggle="modal" data-bs-target="#addModal">➕ THÊM MỚI</button>
+        <button class="btn btn-sm btn-xuat" id="btn-export">⬇️ XUẤT RA FILE</button>
+      </div>
+      <div>
+        <input type="text" id="search-ten" class="form-control form-control-sm" placeholder="Tìm kiếm theo Tên" style="width:250px;">
+      </div>
+      <div>
+        <label class="me-1">Kết quả</label>
+        <select class="form-select form-select-sm" style="width:60px;">
+          <option>5</option><option>10</option><option>20</option>
+        </select>
+      </div>
+    </div>
+
+    <table class="table table-hover text-center align-middle custom-table">
+      <thead class="table-dark">
+        <tr>
+          <th><input type="checkbox"></th>
+          <th>Hành động</th>
+          <th class="sortable" data-field="stt">STT ⬍</th>
+          <th class="sortable" data-field="ten">Tên ⬍</th>
+          <th class="sortable" data-field="hoDem">Họ đệm ⬍</th>
+          <th class="sortable" data-field="diaChi">Địa chỉ ⬍</th>
+          <th>Hoạt động</th>
+        </tr>
+      </thead>
+      <tbody id="nhanvien-tbody"></tbody>
+    </table>
+
+    <p class="text-end">Kết quả 1 đến 4</p> 
+  </div>
+
+  <footer class="custom-footer text-white py-4 mt-4">
+    <div class="container">
+      <p class="mb-2 fw-bold fs-4">TRƯỜNG ĐẠI HỌC THỦY LỢI</p>
+      <p class="mb-0">Địa chỉ: 175 Tây Sơn, Đống Đa, Hà Nội</p>
+      <p class="mb-0">Điện thoại: (024) 38522201 - Fax: (024) 35633351</p>
+      <p class="mb-0">Email: phongqlkh@tlu.edu.vn</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="addModal" tabindex="-1">
+    <div class="modal-dialog">
+      <form class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title fw-bold">Thêm Nhân viên</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3"><label>Tên</label><input type="text" class="form-control" required></div>
+          <div class="mb-3"><label>Họ đệm</label><input type="text" class="form-control" required></div>
+          <div class="mb-3"><label>Địa chỉ</label><input type="text" class="form-control" required></div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-link text-dark text-decoration-none" data-bs-dismiss="modal">Hủy</button>
+          <button class="btn btn-success">Thêm</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
