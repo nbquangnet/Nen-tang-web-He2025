@@ -9,21 +9,18 @@ const thongBao = document.getElementById("thongBao");
 
 let editingRow = null;
 
-// ✅ Hiển thị thông báo với màu tùy chỉnh
 function hienThongBao(msg, color = "green") {
   thongBao.innerText = msg;
   thongBao.style.color = color;
   setTimeout(() => (thongBao.innerText = ""), 3000);
 }
 
-// ✅ Sự kiện Submit (Thêm / Cập nhật)
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   const maSV = maSVInput.value.trim();
   const hoTen = hoTenInput.value.trim();
   const lop = lopInput.value.trim();
 
-  // 🔹 Validation nâng cao
   if (!/^[A-Za-z0-9]{3,10}$/.test(maSV)) {
     hienThongBao("⚠️ Mã SV phải từ 3-10 ký tự, không chứa ký tự đặc biệt!", "red");
     return;
