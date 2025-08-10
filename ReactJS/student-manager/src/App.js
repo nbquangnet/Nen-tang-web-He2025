@@ -116,8 +116,7 @@ function App() {
         />
 
         <footer className="footer">
-          <p>Bài tập thực hành React - CSE391</p>
-          <p>✨ Tính năng: Thêm, Sửa, Xóa, Hiển thị sinh viên với validation</p>
+          <p>Bài tập thực hành số 4</p>
         </footer>
       </div>
     </div>
